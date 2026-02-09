@@ -1,0 +1,19 @@
+<h2>Activities</h2>
+
+<table border="1">
+<tr>
+<th>Name</th>
+<th>Category</th>
+<th>Date</th>
+<th>Winner</th>
+</tr>
+
+{% for a in data %}
+<tr>
+<td>{{a.name}}</td>
+<td>{{a.category}}</td>
+<td>{{a.date}}</td>
+<td>{{a.winner}}</td>
+</tr>
+{% endfor %}
+</table>

@@ -1,0 +1,17 @@
+<h2>Teacher List</h2>
+
+<table border="1">
+<tr>
+<th>Name</th>
+<th>Subject</th>
+<th>Phone</th>
+</tr>
+
+{% for t in data %}
+<tr>
+<td>{{t.name}}</td>
+<td>{{t.subject}}</td>
+<td>{{t.phone}}</td>
+</tr>
+{% endfor %}
+</table>

@@ -1,0 +1,19 @@
+<h2>Fees Structure</h2>
+
+<table border="1">
+<tr>
+<th>Student</th>
+<th>Total</th>
+<th>Paid</th>
+<th>Balance</th>
+</tr>
+
+{% for f in data %}
+<tr>
+<td>{{f.student}}</td>
+<td>{{f.total_fees}}</td>
+<td>{{f.paid}}</td>
+<td>{{f.balance}}</td>
+</tr>
+{% endfor %}
+</table>
