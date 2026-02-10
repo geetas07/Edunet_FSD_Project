@@ -1,0 +1,11 @@
+<h1>Student Profiles</h1>
+<!-- Loop through the students passed from the view and display each -->
+<ul>
+    {% for student in students %}
+        <li>{{ student.name }} - {{ student.course }}</li>
+    {% empty %}
+        <!-- This block runs if the list is empty -->
+        <li>No student profiles available.</li>
+    {% endfor %}
+</ul>
+

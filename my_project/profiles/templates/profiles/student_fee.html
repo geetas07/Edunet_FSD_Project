@@ -1,0 +1,8 @@
+
+<ul>
+    {% for fee in fees %}
+        <li>{{ fee.name }} - {{ fee.course }} - Fee: {{ fee.fee }}</li>
+    {% empty %}
+        <li>No student fees available.</li>
+    {% endfor %}
+</ul>
